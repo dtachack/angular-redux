@@ -1,0 +1,18 @@
+<ng-container *ngIf="isLoading$|async;else header">
+  <app-header-placeholder></app-header-placeholder>
+</ng-container>
+<ng-template #header>
+  <div class="header">
+    <span class="title">
+      Lista-Redux
+    </span>
+    <div class="pagination">
+      <app-pagination></app-pagination>
+    </div>
+    <div class="user">
+      <span>David Niño </span>
+      <img [src]="imageUrl">
+      <button>Salir</button>
+    </div>
+  </div>
+</ng-template>

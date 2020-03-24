@@ -1,0 +1,23 @@
+@import '{ animate } from ../../../src/styles.sass'
+
+.content-pagination
+  margin-top: 10px
+  display: flex
+  .box
+    margin: 5px
+    width: 30px
+    height: 30px
+    background-color: rgba(var(--purple_box), 0.8)
+    border-radius: 5px
+    line-height: 30px
+    color: rgba(var(--white_rgb),0.6)
+    cursor: pointer
+    +animate()
+    &.active
+      background-color: rgb(var(--blue_rgb))
+      color: var(--white)
+    &.disabled
+      cursor: not-allowed
+      pointer-events: none
+      opacity: 0.4
+      

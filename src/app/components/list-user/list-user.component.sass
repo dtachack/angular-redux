@@ -1,0 +1,33 @@
+@import '{ animate } from ../../../src/styles.sass'
+
+.content-list 
+  margin-top: 50px
+  .item-list
+    display: flex
+    align-items: center
+    justify-content: space-around
+    width: 100%
+    max-width: 500px
+    margin: auto
+    background: var(--white)
+    margin-bottom: 15px
+    padding: 10px 0px 10px 0px
+    box-shadow: 0 6px 10px 0 rgba(var(--purple_rgb), 0.06)
+    border-radius: 8px
+    .col-img
+      width: 100px
+      text-align: center
+      display: flex
+      align-items: center
+      justify-content: space-around
+    .col-name,.col-email
+      width: 150px
+      text-align: left
+      span
+        font-size: 12px
+        +animate()
+img
+  height: 50px
+  width: 50px
+  border-radius: 50%
+  +animate()

@@ -1,0 +1,7 @@
+<div class="content-pagination">
+    <div class="box" [class.disabled]="!isLast" (click)="last()"><</div>
+    <div class="box" [class.active]="isActiveBox(item)" *ngFor="let item of numbersPagination"  (click)="loadPage(item)">
+        {{item}}
+    </div>
+    <div class="box" [class.disabled]="!isNext" (click)="next()">></div>
+</div>

@@ -1,0 +1,39 @@
+:root
+  --white:#FFFFFF
+  --white_rgb: 255,255,255
+  --purple: #6B5CB8
+  --purple-loading: #564A92
+  --purple_rgb: 107, 92, 184
+  --purple_box: 86, 74, 146
+  --blue_rgb: 10,178,220
+
+=loading($color:#dddfe2)
+  position: relative
+  overflow: hidden
+  border-radius: 3px
+  &::after 
+    content: ""
+    display: block
+    background-color: $color
+    position: absolute
+    top: 0
+    bottom: 0
+    width: 100%
+    height: 100%
+    transform: translateX(0)
+    animation: 1.5s loading-placeholder ease-in-out infinite
+
+  @keyframes loading-placeholder 
+    0% 
+      transform: translateX(-100%)
+    100% 
+      transform: translateX(100%)
+
+=animate()
+  animation: fadein 2s
+  
+@keyframes fadein
+  from
+    opacity: 0
+  to
+    opacity: 1

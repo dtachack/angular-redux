@@ -1,0 +1,18 @@
+<ng-container *ngIf="isLoading$|async;else listUser">
+  <app-list-placeholder></app-list-placeholder>
+</ng-container>
+<ng-template #listUser>
+  <div class="content-list">
+    <div class="item-list" *ngFor="let user of users$|async">
+      <div class="col-img">
+        <img [src]="user.avatar">
+      </div>
+      <div class="col-name">
+        <span> {{user.first_name}} {{user.last_name}}</span>
+      </div>
+      <div class="col-email">
+        <span>{{user.email}}</span>
+      </div>
+    </div>
+  </div>
+</ng-template>

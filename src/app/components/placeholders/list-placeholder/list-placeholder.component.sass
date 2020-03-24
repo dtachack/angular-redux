@@ -1,0 +1,27 @@
+@import '{ loading } from ../../../src/styles.sass'
+
+.content-list 
+  margin-top: 50px
+  .item-list
+    display: flex
+    align-items: center
+    justify-content: space-around
+    width: 100%
+    max-width: 500px
+    margin: auto
+    background: var(--white)
+    margin-bottom: 15px
+    padding: 10px 0px 10px 0px
+    box-shadow: 0 6px 10px 0 rgba(var(--purple_rgb), 0.06)
+    border-radius: 8px
+    .img
+      width: 50px
+      height: 50px
+      background: #e9ebee
+      +loading()
+      border-radius: 50%
+    .name,.email
+      width: 130px
+      height: 15px
+      background: #e9ebee
+      +loading()

@@ -1,0 +1,48 @@
+@import '{ loading } from ../../../src/styles.sass'
+
+.header
+   height: 60px
+   background-color: var(--purple)
+   display: flex
+   justify-content: space-between
+   border-radius: 8px 8px 0px 0px
+   padding: 0px 20px 0px 20px
+   .content-pagination
+     margin-top: 10px
+     display: flex
+     .box-placeholder
+       margin: 5px
+       width: 30px
+       height: 30px
+       background-color: rgba(var(--purple_box), 0.8)
+       border-radius: 5px
+       +loading(var(--purple-loading))
+   .title
+     width: 100px
+     height: 20px
+     margin-top: 22px
+     border-radius: 2px
+     background-color: red
+     background-color: rgba(var(--purple_box), 0.8)
+     +loading(var(--purple-loading))
+   .user
+     display: flex
+     align-items: center
+     .name
+      background-color: rgba(var(--purple_box), 0.8)
+      width: 80px
+      height: 20px
+      +loading(var(--purple-loading))
+     .img
+       background-color: rgba(var(--purple_box), 0.8)
+       width: 30px
+       height: 30px
+       margin-left: 15px
+       +loading(var(--purple-loading))
+       border-radius: 50%
+     .exit
+       background-color: rgba(var(--purple_box), 0.8)
+       width: 47px 
+       height: 35px
+       margin-left: 30px
+       +loading(var(--purple-loading))
